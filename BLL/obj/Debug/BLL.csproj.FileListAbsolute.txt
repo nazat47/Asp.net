@@ -1,0 +1,37 @@
+D:\Microsoft Visual Studio\repos\OLP\BLL\bin\Debug\BLL.dll
+D:\Microsoft Visual Studio\repos\OLP\BLL\bin\Debug\BLL.pdb
+D:\Microsoft Visual Studio\repos\OLP\BLL\bin\Debug\DAL.dll
+D:\Microsoft Visual Studio\repos\OLP\BLL\bin\Debug\DAL.pdb
+D:\Microsoft Visual Studio\repos\OLP\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\Microsoft Visual Studio\repos\OLP\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\Microsoft Visual Studio\repos\OLP\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\Microsoft Visual Studio\repos\OLP\BLL\obj\Debug\BLL.dll
+D:\Microsoft Visual Studio\repos\OLP\BLL\obj\Debug\BLL.pdb
+D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\BLL\bin\Debug\BLL.dll
+D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\BLL\bin\Debug\BLL.pdb
+D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\BLL\bin\Debug\AutoMapper.dll
+D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\BLL\bin\Debug\DAL.dll
+D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\BLL\bin\Debug\EntityFramework.dll
+D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\BLL\bin\Debug\DAL.pdb
+D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\BLL\bin\Debug\DAL.dll.config
+D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\BLL\bin\Debug\AutoMapper.xml
+D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\BLL\bin\Debug\EntityFramework.xml
+D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\BLL\obj\Debug\BLL.dll
+D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\BLL\obj\Debug\BLL.pdb
+D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\BLL\bin\Debug\BLL.dll
+D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\BLL\bin\Debug\BLL.pdb
+D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\BLL\bin\Debug\AutoMapper.dll
+D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\BLL\bin\Debug\DAL.dll
+D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\BLL\bin\Debug\EntityFramework.dll
+D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\BLL\bin\Debug\DAL.pdb
+D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\BLL\bin\Debug\DAL.dll.config
+D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\BLL\bin\Debug\AutoMapper.xml
+D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\BLL\bin\Debug\EntityFramework.xml
+D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\BLL\obj\Debug\BLL.dll
+D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\BLL\obj\Debug\BLL.pdb

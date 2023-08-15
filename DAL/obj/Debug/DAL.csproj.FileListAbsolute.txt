@@ -1,0 +1,44 @@
+D:\Microsoft Visual Studio\repos\OLP\DAL\bin\Debug\DAL.dll
+D:\Microsoft Visual Studio\repos\OLP\DAL\bin\Debug\DAL.pdb
+D:\Microsoft Visual Studio\repos\OLP\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\Microsoft Visual Studio\repos\OLP\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Microsoft Visual Studio\repos\OLP\DAL\obj\Debug\DAL.dll
+D:\Microsoft Visual Studio\repos\OLP\DAL\obj\Debug\DAL.pdb
+D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\bin\Debug\DAL.dll.config
+D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\bin\Debug\DAL.dll
+D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\bin\Debug\DAL.pdb
+D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\bin\Debug\EntityFramework.dll
+D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\bin\Debug\EntityFramework.xml
+D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.dll
+D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.pdb
+D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.Migrations.CreateDB.resources
+D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.Migrations.implementedCRUDS.resources
+D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.Migrations.AddedAuth.resources
+D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.Migrations.addedUsertype.resources
+<<<<<<< HEAD
+D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.Migrations.chngstudent.resources
+=======
+D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\bin\Debug\DAL.dll.config
+D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\bin\Debug\DAL.dll
+D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\bin\Debug\DAL.pdb
+D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\bin\Debug\EntityFramework.dll
+D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\bin\Debug\EntityFramework.xml
+D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.Migrations.CreateDB.resources
+D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.Migrations.implementedCRUDS.resources
+D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.Migrations.AddedAuth.resources
+D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.Migrations.addedUsertype.resources
+D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.dll
+D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.pdb
+>>>>>>> ab74e403ed4258036332b2a0c7efb310fe7c7a43
