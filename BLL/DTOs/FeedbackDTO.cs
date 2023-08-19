@@ -6,15 +6,14 @@ using System.Threading.Tasks;
 
 namespace BLL.DTOs
 {
-    public class SubmissionDTO
+    public class FeedbackDTO
     {
         public int id { get; set; }
-        public DateTime submitDate { get; set; }
-        public string content { get; set; }
 
-        public int aid { get; set; }
-  
+        public int cid { get; set; }
+
         public int sid { get; set; }
-        public int marks { get; set; }
+        public string message { get; set; }
+        public int rating { get; set; }
     }
 }

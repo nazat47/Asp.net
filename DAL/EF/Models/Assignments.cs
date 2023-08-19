@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
@@ -17,6 +18,8 @@ namespace DAL.EF.Models
         public int tid { get; set; }
         [ForeignKey("course")]
         public int cid { get; set; }
+        [DefaultValue("Active")]
+        public string status { get; set; }
         public virtual Teacher teacher { get; set; }
         public virtual Course course { get; set; }
         public virtual ICollection<Submission> submissions { get; set; }

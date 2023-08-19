@@ -8,18 +8,18 @@ using System.Threading.Tasks;
 
 namespace DAL.EF.Models
 {
-    public class Submission
+    public class Feedback
     {
         [Key]
         public int id { get; set; }
-        public DateTime submitDate { get; set; }
-        public string content { get; set; }
-        [ForeignKey("assignments")]
-        public int aid { get; set; }
+        [ForeignKey("courses")]
+        public int cid { get; set; }
         [ForeignKey("students")]
         public int sid { get; set; }
-        public int marks { get; set; }
+        public string message { get; set; }
+        [Range(0,5)]
+        public int rating { get; set; }
         public virtual Student students { get; set; }
-        public virtual Assignments assignments { get; set; }
+        public virtual Course courses { get; set; }
     }
 }

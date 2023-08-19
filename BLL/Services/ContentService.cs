@@ -51,5 +51,11 @@ namespace BLL.Services
             return data;
 
         }
+        public static int ContentViews(int cid)
+        {
+            var count = DAF.AccessTeacherViews().viewAll();
+            var views = (from i in count where i.CntId == cid select i).ToList().Count();
+            return views;
+        }
     }
 }

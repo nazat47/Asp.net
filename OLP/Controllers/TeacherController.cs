@@ -1,8 +1,10 @@
 ﻿using BLL.DTOs;
 using BLL.Services;
 using OLP.AuthFilters;
+using OLP.Models;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Net.Configuration;
@@ -343,12 +345,12 @@ namespace OLP.Controllers
                 var data = AssignmentService.DeleteAssignments(id);
                 if (data)
                 {
-                    return Request.CreateResponse(HttpStatusCode.OK, new { msg = "Assignment deleted" });
+                    return Request.CreateResponse(HttpStatusCode.OK, new { msg = "Assignment status changed" });
 
                 }
                 else
                 {
-                    return Request.CreateResponse(HttpStatusCode.NoContent, new { msg = "No assignment found" });
+                    return Request.CreateResponse(HttpStatusCode.NotFound, new { msg = "Invalid operation" });
                 }
             }
             catch (Exception e)
@@ -408,6 +410,42 @@ namespace OLP.Controllers
             }
         }
         [HttpGet]
+        [Route("api/course/assignments/submissions/feedback/{id}")]
+        public HttpResponseMessage FeedbackSubmission(int id, FeedbackModel f)
+        {
+            try
+            {
+                var data = TeacherSubmissionService.GetSubmission(id);
+                if (data != null)
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, f.feedback); 
+                }
+                else
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, new { msg = "submission not found" }); 
+                }
+            }
+            catch (Exception e)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, e.Message);
+            }
+        }
+        [HttpGet]
+        [Route("api/course/assignments/submissions/mark/{id}/{mark}")]
+        public HttpResponseMessage SubmissionMark(int id, int mark)
+        {
+            try
+            {
+                var data = TeacherSubmissionService.AddSubmissionMark(id,mark);
+                return data? Request.CreateResponse(HttpStatusCode.OK, new { msg = "Marks added" }) : Request.CreateResponse(HttpStatusCode.OK, new { msg = "Invalid request" });
+        
+            }
+            catch (Exception e)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, e.Message);
+            }
+        }
+        [HttpGet]
         [Route("api/get/course/assignment/submission/delete/{id}")]
         public HttpResponseMessage DeleteSubmission(int id)
         {
@@ -450,7 +488,7 @@ namespace OLP.Controllers
             try
             {
                 var data = TeacherEnrollmentService.GetEnrollment(id);
-                return Request.CreateResponse(HttpStatusCode.OK, data);
+                return data != null ? Request.CreateResponse(HttpStatusCode.OK, data) : Request.CreateResponse(HttpStatusCode.NotFound, new { msg = "Enrollment not found" }) ;
             }
             catch (Exception e)
             {
@@ -472,6 +510,137 @@ namespace OLP.Controllers
                 else
                 {
                     return Request.CreateResponse(HttpStatusCode.NoContent, new { msg = "No enrollment found" });
+                }
+            }
+            catch (Exception e)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, e.Message);
+            }
+        }
+        [HttpGet]
+        [Route("api/get/content/views/{id}")]
+        public HttpResponseMessage GetContentViews(int id)
+        {
+            try
+            {
+                var data =ContentService.ContentViews(id);
+                if (data != 0)
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, "Total views : " + data);
+                }      
+                else
+                {
+                    return Request.CreateResponse(HttpStatusCode.NoContent, new { msg = "Invalid Request" });
+                }
+            }
+            catch (Exception e)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, e.Message);
+            }
+        }
+        [HttpGet]
+        [Route("api/get/course/views/{id}")]
+        public HttpResponseMessage GetCourseViews(int id)
+        {
+            try
+            {
+                var data = CourseService.CourseViews(id);
+                return data!=0 ? Request.CreateResponse(HttpStatusCode.OK, "Total views : " + data) : Request.CreateResponse(HttpStatusCode.NoContent, new { msg = "Invalid Request" });
+                
+            }
+            catch (Exception e)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, e.Message);
+            }
+        }
+        [HttpGet]
+        [Route("api/get/submission/views/{aid}")]
+        public HttpResponseMessage GetSubmissionViews(int aid)
+        {
+            try
+            {
+                var data = TeacherSubmissionService.GetSubmissionViews(aid);
+                return data != 0 ? Request.CreateResponse(HttpStatusCode.OK, "Total views : " + data) : Request.CreateResponse(HttpStatusCode.NoContent, new { msg = "Invalid Request" });
+
+            }
+            catch (Exception e)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, e.Message);
+            }
+        }
+        [HttpGet]
+        [Route("api/get/course/feedbacks/{cid}")]
+        public HttpResponseMessage GetFeedbacks(int cid)
+        {
+            try
+            {
+                var data = FeedbackServices.GetFeedbacks(cid);
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception e)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, e.Message);
+            }
+        }
+
+        [HttpGet]
+        [Route("api/update/course/feedback")]
+        public HttpResponseMessage UpdateFeedback(FeedbackDTO f)
+        {
+            try
+            {
+                var data = FeedbackServices.UpdateFeedback(f);
+                if (data)
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, new { msg = "message edited" });
+                }
+                else
+                {
+                    return Request.CreateResponse(HttpStatusCode.NotFound, new { msg = "invalid request" });
+                }
+
+            }
+            catch (Exception e)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, e.Message);
+            }
+        }
+        [HttpGet]
+        [Route("api/delete/course/feedback/{id}")]
+        public HttpResponseMessage DeleteFeedback(int id)
+        {
+            try
+            {
+                var data = FeedbackServices.DeleteFeedback(id);
+                if (data)
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, new { msg = "feedback Deleted" });
+                }
+
+                else
+                {
+                    return Request.CreateResponse(HttpStatusCode.NotFound, new { msg = "invalid request" });
+                }
+            }
+            catch (Exception e)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, e.Message);
+            }
+        }
+        [HttpGet]
+        [Route("api/create/course/feedback")]
+        public HttpResponseMessage CreateFeedback(FeedbackDTO f)
+        {
+            try
+            {
+                var data = FeedbackServices.CreateFeedback(f);
+                if (data)
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, new { msg = "Thanks for the feedback" });
+                }
+                else
+                {
+                    return Request.CreateResponse(HttpStatusCode.NotFound, new { msg = "Can not write feedback" });
                 }
             }
             catch (Exception e)

@@ -44,5 +44,17 @@ namespace DAL
         {
             return new TeacherProfRepos();
         }
+        public static ISubMarks SubmissionMark()
+        {
+            return new SubmissionRepos();
+        }
+        public static IRepo<WatchList, bool, int> AccessTeacherViews()
+        {
+            return new TeacherViewsRepo();
+        }
+        public static IRepo<Feedback, bool, int> AccessFeedback()
+        {
+            return new FeedbackRepos();
+        }
     }
 }

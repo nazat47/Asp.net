@@ -22,11 +22,13 @@ namespace DAL.EF.Models
         public virtual ICollection<Contents> contents { get; set; }
         public virtual ICollection<Enrollments> enrollments { get; set; }
         public virtual ICollection<Assignments> assignments { get; set; }
+        public virtual ICollection<WatchList> WatchLists { get; set; }
         public Course()
         {
             contents = new List<Contents>();
             enrollments = new List<Enrollments>();
             assignments = new List<Assignments>();
+            WatchLists = new List<WatchList>();
         }
         
        

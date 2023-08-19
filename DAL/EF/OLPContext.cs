@@ -18,6 +18,8 @@ namespace DAL.EF
         public DbSet<Submission> Submissions { get; set; }
         public DbSet<Student> Students { get; set; }
         public DbSet<TokenTeacher> TokenTeachers { get; set; }
+        public DbSet<WatchList> WatchLists { get; set; }
+        public DbSet<Feedback> Feedbacks { get; set; }
 
     }
 }

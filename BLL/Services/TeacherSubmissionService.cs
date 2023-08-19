@@ -20,6 +20,11 @@ namespace BLL.Services
             var cnvt = mapper.Map<SubmissionDTO>(data);
             return cnvt;
         }
+        public static bool AddSubmissionMark(int id,int mark)
+        {
+            var data = DAF.SubmissionMark().AddMarks(id,mark);
+            return data;
+        }
         public static bool DeleteSubmission(int id)
         {
             var data = DAF.AccessSubmissions().delete(id);
@@ -33,6 +38,12 @@ namespace BLL.Services
             var mapper = new Mapper(config);
             var cnvt = mapper.Map<List<SubmissionDTO>>(res);
             return cnvt;
+        }
+        public static int GetSubmissionViews(int id)
+        {
+            var data = DAF.AccessSubmissions().viewAll();
+            var res = (from s in data where s.aid == id select s).ToList().Count();
+            return res;
         }
         /*public static StudentDTO GetStudentBySid(int sid)
         {

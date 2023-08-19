@@ -49,14 +49,17 @@
     <Compile Include="DTOs\ContentsDTO.cs" />
     <Compile Include="DTOs\CourseDTO.cs" />
     <Compile Include="DTOs\EnrollmentsDTO.cs" />
+    <Compile Include="DTOs\FeedbackDTO.cs" />
     <Compile Include="DTOs\StudentDTO.cs" />
     <Compile Include="DTOs\SubmissionDTO.cs" />
     <Compile Include="DTOs\TeacherDTO.cs" />
     <Compile Include="DTOs\TokenTeacherDTO.cs" />
+    <Compile Include="DTOs\WatchListDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AssignmentService.cs" />
     <Compile Include="Services\ContentService.cs" />
     <Compile Include="Services\CourseService.cs" />
+    <Compile Include="Services\FeedbackServices.cs" />
     <Compile Include="Services\TeacherAuth.cs" />
     <Compile Include="Services\TeacherEnrollmentService.cs" />
     <Compile Include="Services\TeacherSubmissionService.cs" />

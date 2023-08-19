@@ -22,10 +22,12 @@ namespace DAL.EF.Models
         public DateTime DOB { get; set; }
         public virtual ICollection<Submission> submissions { get; set; }
         public virtual ICollection<Enrollments> enrollments { get; set; }
+        public virtual ICollection<WatchList> WatchLists { get; set; }
         public Student()
         {
             submissions = new List<Submission>();
             enrollments = new List<Enrollments>();
+            WatchLists = new List<WatchList>();
         }
     }
 }
