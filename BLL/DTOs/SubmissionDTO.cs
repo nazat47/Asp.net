@@ -13,7 +13,7 @@ namespace BLL.DTOs
         public string content { get; set; }
 
         public int aid { get; set; }
-  
+
         public int sid { get; set; }
         public int marks { get; set; }
     }

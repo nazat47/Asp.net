@@ -26,7 +26,7 @@ namespace DAL.Repos
                     del.status = "Inactive";
                 }
             }
-            
+
             return db.SaveChanges() > 0;
         }
 

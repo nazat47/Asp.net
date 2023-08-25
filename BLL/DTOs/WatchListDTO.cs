@@ -15,6 +15,6 @@ namespace BLL.DTOs
         public int StuId { get; set; }
         public int CntId { get; set; }
         public int CrsId { get; set; }
-        //public int MyCrsId { get; set; }
+        public int MyCrsId { get; set; }
     }
 }

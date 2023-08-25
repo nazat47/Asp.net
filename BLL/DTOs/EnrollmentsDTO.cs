@@ -9,11 +9,11 @@ namespace BLL.DTOs
     public class EnrollmentsDTO
     {
         public int id { get; set; }
-   
+
         public int sid { get; set; }
-      
+
         public int tid { get; set; }
-        
+
         public int cid { get; set; }
     }
 }

@@ -14,10 +14,10 @@ using System.Web.Http.Cors;
 
 namespace OLP.Controllers
 {
-    [EnableCors("*","*","*")]
+    [EnableCors("*", "*", "*")]
     public class TeacherController : ApiController
     {
-        //[TeacherLogged]
+        [TeacherLogged]
         [HttpGet]
         [Route("api/get/teacher/{id}")]
         public HttpResponseMessage GetTeacher(int id)
@@ -27,7 +27,7 @@ namespace OLP.Controllers
                 var data = TeacherService.GetTeacher(id);
                 return Request.CreateResponse(HttpStatusCode.OK, data);
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, e.Message);
             }
@@ -48,7 +48,7 @@ namespace OLP.Controllers
                 {
                     return Request.CreateResponse(HttpStatusCode.NotFound, new { msg = "No profile found" });
                 }
-               
+
             }
             catch (Exception e)
             {
@@ -66,7 +66,7 @@ namespace OLP.Controllers
                 {
                     return Request.CreateResponse(HttpStatusCode.OK, new { msg = "profile Deleted" });
                 }
-              
+
                 else
                 {
                     return Request.CreateResponse(HttpStatusCode.NotFound, new { msg = "No profile found" });
@@ -87,7 +87,7 @@ namespace OLP.Controllers
                 if (data)
                 {
                     return Request.CreateResponse(HttpStatusCode.OK, new { msg = "Profile created" });
-                }             
+                }
                 else
                 {
                     return Request.CreateResponse(HttpStatusCode.NotFound, new { msg = "Can not create profile" });
@@ -133,7 +133,7 @@ namespace OLP.Controllers
         {
             try
             {
-                var data = CourseService.UpdateCourses(c);             
+                var data = CourseService.UpdateCourses(c);
                 if (data)
                 {
                     return Request.CreateResponse(HttpStatusCode.OK, new { msg = "Course updated" });
@@ -170,6 +170,7 @@ namespace OLP.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, e.Message);
             }
         }
+        [IsTeacher]
         [HttpGet]
         [Route("api/get/course/create")]
         public HttpResponseMessage CreateCourse(CourseDTO c)
@@ -279,7 +280,7 @@ namespace OLP.Controllers
                 {
                     return Request.CreateResponse(HttpStatusCode.NoContent, new { msg = "Course id invalid" });
                 }
-               
+
             }
             catch (Exception e)
             {
@@ -288,11 +289,11 @@ namespace OLP.Controllers
         }
         [HttpGet]
         [Route("api/teacher/course/assignments/{cid}/{tid}")]
-        public HttpResponseMessage GetAllAssignments(int cid,int tid)
+        public HttpResponseMessage GetAllAssignments(int cid, int tid)
         {
             try
             {
-                var data = AssignmentService.GetAllAssignments(cid,tid);
+                var data = AssignmentService.GetAllAssignments(cid, tid);
                 return Request.CreateResponse(HttpStatusCode.OK, data);
             }
             catch (Exception e)
@@ -358,6 +359,7 @@ namespace OLP.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, e.Message);
             }
         }
+        [TeacherLogged]
         [HttpGet]
         [Route("api/course/Assignment/create")]
         public HttpResponseMessage CreateAssignment(AssignmentsDTO a)
@@ -418,11 +420,11 @@ namespace OLP.Controllers
                 var data = TeacherSubmissionService.GetSubmission(id);
                 if (data != null)
                 {
-                    return Request.CreateResponse(HttpStatusCode.OK, f.feedback); 
+                    return Request.CreateResponse(HttpStatusCode.OK, f.feedback);
                 }
                 else
                 {
-                    return Request.CreateResponse(HttpStatusCode.OK, new { msg = "submission not found" }); 
+                    return Request.CreateResponse(HttpStatusCode.OK, new { msg = "submission not found" });
                 }
             }
             catch (Exception e)
@@ -436,9 +438,9 @@ namespace OLP.Controllers
         {
             try
             {
-                var data = TeacherSubmissionService.AddSubmissionMark(id,mark);
-                return data? Request.CreateResponse(HttpStatusCode.OK, new { msg = "Marks added" }) : Request.CreateResponse(HttpStatusCode.OK, new { msg = "Invalid request" });
-        
+                var data = TeacherSubmissionService.AddSubmissionMark(id, mark);
+                return data ? Request.CreateResponse(HttpStatusCode.OK, new { msg = "Marks added" }) : Request.CreateResponse(HttpStatusCode.OK, new { msg = "Invalid request" });
+
             }
             catch (Exception e)
             {
@@ -469,11 +471,11 @@ namespace OLP.Controllers
         }
         [HttpGet]
         [Route("api/teacher/course/enrollments/{cid}/{tid}")]
-        public HttpResponseMessage GetEnrollmentsByCid(int cid,int tid)
+        public HttpResponseMessage GetEnrollmentsByCid(int cid, int tid)
         {
             try
             {
-                var data = TeacherEnrollmentService.GetEnrollmentByCid(cid,tid);
+                var data = TeacherEnrollmentService.GetEnrollmentByCid(cid, tid);
                 return Request.CreateResponse(HttpStatusCode.OK, data);
             }
             catch (Exception e)
@@ -488,7 +490,7 @@ namespace OLP.Controllers
             try
             {
                 var data = TeacherEnrollmentService.GetEnrollment(id);
-                return data != null ? Request.CreateResponse(HttpStatusCode.OK, data) : Request.CreateResponse(HttpStatusCode.NotFound, new { msg = "Enrollment not found" }) ;
+                return data != null ? Request.CreateResponse(HttpStatusCode.OK, data) : Request.CreateResponse(HttpStatusCode.NotFound, new { msg = "Enrollment not found" });
             }
             catch (Exception e)
             {
@@ -523,11 +525,11 @@ namespace OLP.Controllers
         {
             try
             {
-                var data =ContentService.ContentViews(id);
+                var data = ContentService.ContentViews(id);
                 if (data != 0)
                 {
                     return Request.CreateResponse(HttpStatusCode.OK, "Total views : " + data);
-                }      
+                }
                 else
                 {
                     return Request.CreateResponse(HttpStatusCode.NoContent, new { msg = "Invalid Request" });
@@ -545,8 +547,8 @@ namespace OLP.Controllers
             try
             {
                 var data = CourseService.CourseViews(id);
-                return data!=0 ? Request.CreateResponse(HttpStatusCode.OK, "Total views : " + data) : Request.CreateResponse(HttpStatusCode.NoContent, new { msg = "Invalid Request" });
-                
+                return data != 0 ? Request.CreateResponse(HttpStatusCode.OK, "Total views : " + data) : Request.CreateResponse(HttpStatusCode.NoContent, new { msg = "Invalid Request" });
+
             }
             catch (Exception e)
             {
@@ -641,6 +643,90 @@ namespace OLP.Controllers
                 else
                 {
                     return Request.CreateResponse(HttpStatusCode.NotFound, new { msg = "Can not write feedback" });
+                }
+            }
+            catch (Exception e)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, e.Message);
+            }
+        }
+        [HttpGet]
+        [Route("api/get/course/student/progress/{cid}/{sid}")]
+        public HttpResponseMessage GetStudentProgress(int cid, int sid)
+        {
+            try
+            {
+                var data = CourseService.GetStudentProgress(cid, sid);
+                if (data != 0)
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, "Student Progress(%): " + data);
+                }
+                else
+                {
+                    return Request.CreateResponse(HttpStatusCode.NotFound, new { msg = "Invalid Request" });
+                }
+            }
+            catch (Exception e)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, e.Message);
+            }
+        }
+        [HttpGet]
+        [Route("api/get/course/totalstudent/{cid}")]
+        public HttpResponseMessage TotalCourseStudent(int cid)
+        {
+            try
+            {
+                var data = TeacherEnrollmentService.TotalCourseStudent(cid);
+                if (data != 0)
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, data);
+                }
+                else
+                {
+                    return Request.CreateResponse(HttpStatusCode.NotFound, new { msg = "Invalid Request" });
+                }
+            }
+            catch (Exception e)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, e.Message);
+            }
+        }
+        [HttpGet]
+        [Route("api/get/assignment/student/grade/{aid}/{sid}")]
+        public HttpResponseMessage GetStudentGrade(int aid, int sid)
+        {
+            try
+            {
+                var data = TeacherSubmissionService.PutStudentGrade(aid, sid);
+                if (data != null)
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, "Grade : " + data);
+                }
+                else
+                {
+                    return Request.CreateResponse(HttpStatusCode.NotFound, new { msg = "Invalid Request" });
+                }
+            }
+            catch (Exception e)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, e.Message);
+            }
+        }
+        [HttpGet]
+        [Route("api/get/teacher/student/performance/{tid}/{sid}")]
+        public HttpResponseMessage AnalyzeStudent(int tid, int sid)
+        {
+            try
+            {
+                var data = TeacherEnrollmentService.AnalyzeStudent(tid, sid);
+                if (data != null)
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, data);
+                }
+                else
+                {
+                    return Request.CreateResponse(HttpStatusCode.NotFound, new { msg = "Invalid Request" });
                 }
             }
             catch (Exception e)

@@ -12,6 +12,8 @@ namespace DAL.EF.Models
     {
         [Key]
         public int id { get; set; }
+        [Required]
+        [DataType(DataType.Date)]
         public DateTime submitDate { get; set; }
         public string content { get; set; }
         [ForeignKey("assignments")]

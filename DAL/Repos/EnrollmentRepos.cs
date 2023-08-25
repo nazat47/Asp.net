@@ -36,5 +36,6 @@ namespace DAL.Repos
         {
             return db.Enrollments.ToList();
         }
+
     }
 }

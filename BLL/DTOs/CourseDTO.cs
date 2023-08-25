@@ -12,7 +12,7 @@ namespace BLL.DTOs
         public string title { get; set; }
         public DateTime created { get; set; }
         public string description { get; set; }
-     
+
         public int tid { get; set; }
     }
 }

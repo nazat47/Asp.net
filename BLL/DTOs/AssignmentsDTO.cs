@@ -12,11 +12,11 @@ namespace BLL.DTOs
         public int id { get; set; }
         public string title { get; set; }
         public DateTime deadline { get; set; }
-        
+
         public int tid { get; set; }
-        
+
         public int cid { get; set; }
         public string status { get; set; }
-    
+
     }
 }

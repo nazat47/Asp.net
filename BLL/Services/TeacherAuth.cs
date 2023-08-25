@@ -12,7 +12,7 @@ namespace BLL.Services
 {
     public class TeacherAuth
     {
-        public static TokenTeacherDTO Login(string username,string password)
+        public static TokenTeacherDTO Login(string username, string password)
         {
             var res = DAF.AccessAuthenticateTeacher().AuthenticateTeacher(username, password);
             if (res != null)
@@ -32,7 +32,7 @@ namespace BLL.Services
         }
         public static bool isTeacherTokenValid(string key)
         {
-            var data = (from t in DAF.AccessTeacherToken().viewAll() where t.key.Equals(key) && t.expiredDate>DateTime.Now select t).SingleOrDefault();
+            var data = (from t in DAF.AccessTeacherToken().viewAll() where t.key.Equals(key) && t.expiredDate > DateTime.Now select t).SingleOrDefault();
             return data != null;
 
         }

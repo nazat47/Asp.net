@@ -24,10 +24,10 @@ namespace OLP.Controllers
                 }
                 else
                 {
-                    return Request.CreateResponse(HttpStatusCode.NotFound, new { msg="Username or password not found" });
+                    return Request.CreateResponse(HttpStatusCode.NotFound, new { msg = "Username or password not found" });
                 }
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 return Request.CreateErrorResponse(HttpStatusCode.BadRequest, e.Message);
             }

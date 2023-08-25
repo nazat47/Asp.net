@@ -29,7 +29,7 @@ namespace DAL.Repos
             up.title = c.title;
             up.created = c.created;
             up.description = c.description;
-            return db.SaveChanges()>0;
+            return db.SaveChanges() > 0;
 
 
         }

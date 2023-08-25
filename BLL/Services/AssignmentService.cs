@@ -13,10 +13,10 @@ namespace BLL.Services
 {
     public class AssignmentService
     {
-        public static List<AssignmentsDTO> GetAllAssignments(int cid,int tid)
+        public static List<AssignmentsDTO> GetAllAssignments(int cid, int tid)
         {
             var data = DAF.AccessAssignments().viewAll();
-            var contents = (from i in data where i.cid == cid && i.tid==tid select i).ToList();
+            var contents = (from i in data where i.cid == cid && i.tid == tid select i).ToList();
             var config = new MapperConfiguration(cfg => { cfg.CreateMap<Assignments, AssignmentsDTO>(); });
             var mapper = new Mapper(config);
             var cnvt = mapper.Map<List<AssignmentsDTO>>(contents);

@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{05049CEE-E987-4303-8438-CAC6B070D5DE}</ProjectGuid>
+    <ProjectGuid>{258997A4-0035-451F-A55A-135237F9E341}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BLL</RootNamespace>
     <AssemblyName>BLL</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
@@ -45,35 +45,52 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="DTOs\AdminDTO.cs" />
     <Compile Include="DTOs\AssignmentsDTO.cs" />
     <Compile Include="DTOs\ContentsDTO.cs" />
     <Compile Include="DTOs\CourseDTO.cs" />
     <Compile Include="DTOs\EnrollmentsDTO.cs" />
     <Compile Include="DTOs\FeedbackDTO.cs" />
+    <Compile Include="DTOs\MyAssignmentDTO.cs" />
+    <Compile Include="DTOs\MyCourseDTO.cs" />
+    <Compile Include="DTOs\MyCourseStudentDTO.cs" />
+    <Compile Include="DTOs\MyCourseWatchListDTO.cs" />
+    <Compile Include="DTOs\MySubmissionDTO.cs" />
     <Compile Include="DTOs\StudentDTO.cs" />
+    <Compile Include="DTOs\StudentMyCourseDTO.cs" />
     <Compile Include="DTOs\SubmissionDTO.cs" />
     <Compile Include="DTOs\TeacherDTO.cs" />
+    <Compile Include="DTOs\TokenAdminDTO.cs" />
+    <Compile Include="DTOs\TokenStudentDTO.cs" />
     <Compile Include="DTOs\TokenTeacherDTO.cs" />
     <Compile Include="DTOs\WatchListDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AdminAuth.cs" />
+    <Compile Include="Services\AdminService.cs" />
     <Compile Include="Services\AssignmentService.cs" />
     <Compile Include="Services\ContentService.cs" />
     <Compile Include="Services\CourseService.cs" />
     <Compile Include="Services\FeedbackServices.cs" />
+    <Compile Include="Services\MyAssignmentServices.cs" />
+    <Compile Include="Services\MyCourseServices.cs" />
+    <Compile Include="Services\MySubmissionServices.cs" />
+    <Compile Include="Services\StudentAuthServices.cs" />
+    <Compile Include="Services\StudentServices.cs" />
     <Compile Include="Services\TeacherAuth.cs" />
     <Compile Include="Services\TeacherEnrollmentService.cs" />
-    <Compile Include="Services\TeacherSubmissionService.cs" />
     <Compile Include="Services\TeacherService.cs" />
+    <Compile Include="Services\TeacherSubmissionService.cs" />
+    <Compile Include="Services\WatchListServices.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">
-      <Project>{53f0e956-4c47-44f0-b715-0305354b5098}</Project>
+      <Project>{54e6fc8c-7988-404c-89e5-4b15ca2d2528}</Project>
       <Name>DAL</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

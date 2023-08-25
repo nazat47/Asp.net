@@ -12,9 +12,14 @@ namespace DAL.EF.Models
     {
         [Key]
         public int id { get; set; }
+        [Required]
+        [StringLength(100)]
         public string name { get; set; }
+        [Required]
+        [EmailAddress]
         public string email { get; set; }
-        
+        [Required]
+        [PasswordPropertyText(true)]
         public string password { get; set; }
         [DefaultValue("teacher")]
         public string type { get; set; }

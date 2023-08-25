@@ -8,16 +8,16 @@ using System.Threading.Tasks;
 
 namespace DAL.Repos
 {
-    internal class SubmissionRepos : Repo, IRepo<Submission, bool, int>,ISubMarks
+    internal class SubmissionRepos : Repo, IRepo<Submission, bool, int>, ISubMarks
     {
         public bool AddMarks(int id, int mark)
         {
             var data = db.Submissions.Find(id);
-            if (data!=null)
+            if (data != null)
             {
                 data.marks = mark;
             }
-            
+
             return db.SaveChanges() > 0;
         }
 

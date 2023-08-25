@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Repos
 {
-    internal class TeacherProfRepos : Repo, IRepo<Teacher, bool, int>,ITeacherAuth
+    internal class TeacherProfRepos : Repo, IRepo<Teacher, bool, int>, ITeacherAuth
     {
         public Teacher AuthenticateTeacher(string username, string password)
         {
@@ -26,7 +26,7 @@ namespace DAL.Repos
                 return db.SaveChanges() > 0;
             }
             return false;
-            
+
         }
 
         public bool delete(int id)

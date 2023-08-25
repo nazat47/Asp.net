@@ -59,6 +59,13 @@ namespace BLL.Services
             return views;
 
         }
+        public static int GetStudentProgress(int cid, int sid)
+        {
+            var data = (from i in DAF.AccessTeacherViews().viewAll() where i.CrsId == cid && i.StuId == sid select i).ToList().Count();
+            var data2 = (from j in DAF.AccessContents().viewAll() where j.cid == cid select j).ToList().Count();
+            var res = (data / data2) * 100;
+            return res;
+        }
 
     }
 }

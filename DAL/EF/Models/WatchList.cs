@@ -26,9 +26,9 @@ namespace DAL.EF.Models
         public int CntId { get; set; }
         [ForeignKey("Course")]
         public int CrsId { get; set; }
-       // [ForeignKey("MyCourse")]
-       // public int MyCrsId { get; set; }
-     //   public MyCourse MyCourse { get; set; }
+        [ForeignKey("MyCourse")]
+        public int MyCrsId { get; set; }
+        public MyCourse MyCourse { get; set; }
         public Course Course { get; set; }
         public Contents Contents { get; set; }
         public Student Student { get; set; }

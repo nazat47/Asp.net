@@ -9,7 +9,7 @@ using System.Web.Http.Filters;
 
 namespace OLP.AuthFilters
 {
-    public class IsTeacher:AuthorizationFilterAttribute
+    public class IsTeacher : AuthorizationFilterAttribute
     {
         public override void OnAuthorization(HttpActionContext actionContext)
         {

@@ -5,12 +5,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{53F0E956-4C47-44F0-B715-0305354B5098}</ProjectGuid>
+    <ProjectGuid>{54E6FC8C-7988-404C-89E5-4B15CA2D2528}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DAL</RootNamespace>
     <AssemblyName>DAL</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
@@ -52,80 +52,69 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAF.cs" />
+    <Compile Include="EF\Models\Admin.cs" />
     <Compile Include="EF\Models\Assignments.cs" />
     <Compile Include="EF\Models\Contents.cs" />
     <Compile Include="EF\Models\Course.cs" />
     <Compile Include="EF\Models\Enrollments.cs" />
     <Compile Include="EF\Models\Feedback.cs" />
+    <Compile Include="EF\Models\MyAssignment.cs" />
+    <Compile Include="EF\Models\MyCourse.cs" />
+    <Compile Include="EF\Models\MySubmission.cs" />
     <Compile Include="EF\Models\Student.cs" />
     <Compile Include="EF\Models\Submission.cs" />
     <Compile Include="EF\Models\Teacher.cs" />
+    <Compile Include="EF\Models\Token.cs" />
+    <Compile Include="EF\Models\TokenStudent.cs" />
     <Compile Include="EF\Models\TokenTeacher.cs" />
+    <Compile Include="EF\Models\User.cs" />
     <Compile Include="EF\Models\WatchList.cs" />
     <Compile Include="EF\OLPContext.cs" />
+    <Compile Include="Interfaces\IAdminAuth.cs" />
+    <Compile Include="Interfaces\IAuthStudent.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
     <Compile Include="Interfaces\ISubMarks.cs" />
     <Compile Include="Interfaces\ITeacherAuth.cs" />
-    <Compile Include="Migrations\202308031546342_CreateDB.cs" />
-    <Compile Include="Migrations\202308031546342_CreateDB.designer.cs">
-      <DependentUpon>202308031546342_CreateDB.cs</DependentUpon>
+    <Compile Include="Migrations\202308241722301_updatestudent.cs" />
+    <Compile Include="Migrations\202308241722301_updatestudent.designer.cs">
+      <DependentUpon>202308241722301_updatestudent.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202308050741229_implementedCRUDS.cs" />
-    <Compile Include="Migrations\202308050741229_implementedCRUDS.designer.cs">
-      <DependentUpon>202308050741229_implementedCRUDS.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202308051548558_AddedAuth.cs" />
-    <Compile Include="Migrations\202308051548558_AddedAuth.designer.cs">
-      <DependentUpon>202308051548558_AddedAuth.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202308051557492_addedUsertype.cs" />
-    <Compile Include="Migrations\202308051557492_addedUsertype.designer.cs">
-      <DependentUpon>202308051557492_addedUsertype.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202308181525088_addednewdatabase.cs" />
-    <Compile Include="Migrations\202308181525088_addednewdatabase.designer.cs">
-      <DependentUpon>202308181525088_addednewdatabase.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202308191508128_adddedwatch.cs" />
-    <Compile Include="Migrations\202308191508128_adddedwatch.designer.cs">
-      <DependentUpon>202308191508128_adddedwatch.cs</DependentUpon>
+    <Compile Include="Migrations\202308241733261_updatestudent1.cs" />
+    <Compile Include="Migrations\202308241733261_updatestudent1.designer.cs">
+      <DependentUpon>202308241733261_updatestudent1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repos\AdminProfRepo.cs" />
     <Compile Include="Repos\AssignmentRepos.cs" />
     <Compile Include="Repos\ContentRepos.cs" />
     <Compile Include="Repos\CourseRepos.cs" />
     <Compile Include="Repos\EnrollmentRepos.cs" />
     <Compile Include="Repos\FeedbackRepos.cs" />
+    <Compile Include="Repos\MyAssignmentRepos.cs" />
+    <Compile Include="Repos\MyCourseRepos.cs" />
+    <Compile Include="Repos\MySubmissionRepos.cs" />
     <Compile Include="Repos\Repo.cs" />
+    <Compile Include="Repos\StudentRepos.cs" />
     <Compile Include="Repos\SubmissionRepos.cs" />
     <Compile Include="Repos\TeacherProfRepos.cs" />
     <Compile Include="Repos\TeacherViewsRepo.cs" />
+    <Compile Include="Repos\TokenAdminRepo.cs" />
+    <Compile Include="Repos\TokenStudentRepos.cs" />
     <Compile Include="Repos\TokenTeacherRepo.cs" />
+    <Compile Include="Repos\UserRepos.cs" />
+    <Compile Include="Repos\WatchListRepos.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202308031546342_CreateDB.resx">
-      <DependentUpon>202308031546342_CreateDB.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202308241722301_updatestudent.resx">
+      <DependentUpon>202308241722301_updatestudent.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202308050741229_implementedCRUDS.resx">
-      <DependentUpon>202308050741229_implementedCRUDS.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202308051548558_AddedAuth.resx">
-      <DependentUpon>202308051548558_AddedAuth.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202308051557492_addedUsertype.resx">
-      <DependentUpon>202308051557492_addedUsertype.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202308181525088_addednewdatabase.resx">
-      <DependentUpon>202308181525088_addednewdatabase.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202308191508128_adddedwatch.resx">
-      <DependentUpon>202308191508128_adddedwatch.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202308241733261_updatestudent1.resx">
+      <DependentUpon>202308241733261_updatestudent1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

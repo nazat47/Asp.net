@@ -16,8 +16,11 @@ namespace DAL.EF.Models
         public int cid { get; set; }
         [ForeignKey("students")]
         public int sid { get; set; }
+        [Required]
+        [StringLength(100)]
         public string message { get; set; }
-        [Range(0,5)]
+        [Required]
+        [Range(0, 5)]
         public int rating { get; set; }
         public virtual Student students { get; set; }
         public virtual Course courses { get; set; }

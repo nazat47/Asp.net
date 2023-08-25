@@ -12,8 +12,11 @@ namespace DAL.EF.Models
     {
         [Key]
         public int id { get; set; }
-
+        [Required]
+        [StringLength(100)]
         public string title { get; set; }
+        [Required]
+        [DataType(DataType.Date)]
         public DateTime created { get; set; }
         [ForeignKey("courses")]
         public int cid { get; set; }

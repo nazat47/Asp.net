@@ -1,46 +1,72 @@
-D:\Microsoft Visual Studio\repos\OLP\DAL\bin\Debug\DAL.dll
-D:\Microsoft Visual Studio\repos\OLP\DAL\bin\Debug\DAL.pdb
-D:\Microsoft Visual Studio\repos\OLP\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
-D:\Microsoft Visual Studio\repos\OLP\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
-D:\Microsoft Visual Studio\repos\OLP\DAL\obj\Debug\DAL.dll
-D:\Microsoft Visual Studio\repos\OLP\DAL\obj\Debug\DAL.pdb
-D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\bin\Debug\DAL.dll.config
-D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\bin\Debug\DAL.dll
-D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\bin\Debug\DAL.pdb
-D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\bin\Debug\EntityFramework.dll
-D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\bin\Debug\EntityFramework.SqlServer.dll
-D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\bin\Debug\EntityFramework.xml
-D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\bin\Debug\EntityFramework.SqlServer.xml
-D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
-D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
-D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.csproj.CopyComplete
-D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.dll
-D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.pdb
-D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.Migrations.CreateDB.resources
-D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
-D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.Migrations.implementedCRUDS.resources
-D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.Migrations.AddedAuth.resources
-D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.Migrations.addedUsertype.resources
-<<<<<<< HEAD
-D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.Migrations.chngstudent.resources
-=======
-D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\bin\Debug\DAL.dll.config
-D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\bin\Debug\DAL.dll
-D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\bin\Debug\DAL.pdb
-D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\bin\Debug\EntityFramework.dll
-D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\bin\Debug\EntityFramework.SqlServer.dll
-D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\bin\Debug\EntityFramework.xml
-D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\bin\Debug\EntityFramework.SqlServer.xml
-D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
-D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.Migrations.CreateDB.resources
-D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.Migrations.implementedCRUDS.resources
-D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.Migrations.AddedAuth.resources
-D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.Migrations.addedUsertype.resources
-D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
-D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
-D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.csproj.CopyComplete
-D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.dll
-D:\American International Univertity\semester 12\advance programing with dot net\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.pdb
->>>>>>> ab74e403ed4258036332b2a0c7efb310fe7c7a43
-D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.Migrations.addednewdatabase.resources
-D:\Microsoft Visual Studio\repos\Online-Learning-Platform\OLP\DAL\obj\Debug\DAL.Migrations.adddedwatch.resources
+F:\AIUB-American International University Bangladesh\10th semester\Advance .Net\code\OLP\DAL\bin\Debug\DAL.dll.config
+F:\AIUB-American International University Bangladesh\10th semester\Advance .Net\code\OLP\DAL\bin\Debug\DAL.dll
+F:\AIUB-American International University Bangladesh\10th semester\Advance .Net\code\OLP\DAL\bin\Debug\DAL.pdb
+F:\AIUB-American International University Bangladesh\10th semester\Advance .Net\code\OLP\DAL\bin\Debug\EntityFramework.dll
+F:\AIUB-American International University Bangladesh\10th semester\Advance .Net\code\OLP\DAL\bin\Debug\EntityFramework.SqlServer.dll
+F:\AIUB-American International University Bangladesh\10th semester\Advance .Net\code\OLP\DAL\bin\Debug\EntityFramework.xml
+F:\AIUB-American International University Bangladesh\10th semester\Advance .Net\code\OLP\DAL\bin\Debug\EntityFramework.SqlServer.xml
+F:\AIUB-American International University Bangladesh\10th semester\Advance .Net\code\OLP\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+F:\AIUB-American International University Bangladesh\10th semester\Advance .Net\code\OLP\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+F:\AIUB-American International University Bangladesh\10th semester\Advance .Net\code\OLP\DAL\obj\Debug\DAL.csproj.CopyComplete
+F:\AIUB-American International University Bangladesh\10th semester\Advance .Net\code\OLP\DAL\obj\Debug\DAL.dll
+F:\AIUB-American International University Bangladesh\10th semester\Advance .Net\code\OLP\DAL\obj\Debug\DAL.pdb
+F:\AIUB-American International University Bangladesh\10th semester\Advance .Net\code\OLP\DAL\obj\Debug\DAL.Migrations.Addadminteacherstudenttable.resources
+F:\AIUB-American International University Bangladesh\10th semester\Advance .Net\code\OLP\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+C:\Users\shafi\Downloads\OLP\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\shafi\Downloads\OLP\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\shafi\Downloads\OLP\DAL\obj\Debug\DAL.dll
+C:\Users\shafi\Downloads\OLP\DAL\obj\Debug\DAL.pdb
+C:\Users\shafi\Downloads\OLP\DAL\bin\Debug\DAL.dll.config
+C:\Users\shafi\Downloads\OLP\DAL\bin\Debug\DAL.dll
+C:\Users\shafi\Downloads\OLP\DAL\bin\Debug\DAL.pdb
+C:\Users\shafi\Downloads\OLP\DAL\bin\Debug\EntityFramework.dll
+C:\Users\shafi\Downloads\OLP\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\shafi\Downloads\OLP\DAL\bin\Debug\EntityFramework.xml
+C:\Users\shafi\Downloads\OLP\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\shafi\Downloads\OLP\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\shafi\Downloads\OLP\DAL\obj\Debug\DAL.Migrations.initalltable.resources
+C:\Users\shafi\Downloads\OLP\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+F:\AIUB-American International University Bangladesh\10th semester\Advance .Net\code\OLP\OLP\DAL\bin\Debug\DAL.dll.config
+F:\AIUB-American International University Bangladesh\10th semester\Advance .Net\code\OLP\OLP\DAL\bin\Debug\DAL.dll
+F:\AIUB-American International University Bangladesh\10th semester\Advance .Net\code\OLP\OLP\DAL\bin\Debug\DAL.pdb
+F:\AIUB-American International University Bangladesh\10th semester\Advance .Net\code\OLP\OLP\DAL\bin\Debug\EntityFramework.dll
+F:\AIUB-American International University Bangladesh\10th semester\Advance .Net\code\OLP\OLP\DAL\bin\Debug\EntityFramework.SqlServer.dll
+F:\AIUB-American International University Bangladesh\10th semester\Advance .Net\code\OLP\OLP\DAL\bin\Debug\EntityFramework.xml
+F:\AIUB-American International University Bangladesh\10th semester\Advance .Net\code\OLP\OLP\DAL\bin\Debug\EntityFramework.SqlServer.xml
+F:\AIUB-American International University Bangladesh\10th semester\Advance .Net\code\OLP\OLP\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+F:\AIUB-American International University Bangladesh\10th semester\Advance .Net\code\OLP\OLP\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+F:\AIUB-American International University Bangladesh\10th semester\Advance .Net\code\OLP\OLP\DAL\obj\Debug\DAL.csproj.CopyComplete
+F:\AIUB-American International University Bangladesh\10th semester\Advance .Net\code\OLP\OLP\DAL\obj\Debug\DAL.dll
+F:\AIUB-American International University Bangladesh\10th semester\Advance .Net\code\OLP\OLP\DAL\obj\Debug\DAL.pdb
+F:\AIUB-American International University Bangladesh\10th semester\Advance .Net\code\OLP\OLP\DAL\obj\Debug\DAL.Migrations.initalltable.resources
+F:\AIUB-American International University Bangladesh\10th semester\Advance .Net\code\OLP\OLP\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+C:\Users\galib\Downloads\Online-Learning-Platform-main\OLP\DAL\bin\Debug\DAL.dll.config
+C:\Users\galib\Downloads\Online-Learning-Platform-main\OLP\DAL\bin\Debug\DAL.dll
+C:\Users\galib\Downloads\Online-Learning-Platform-main\OLP\DAL\bin\Debug\DAL.pdb
+C:\Users\galib\Downloads\Online-Learning-Platform-main\OLP\DAL\bin\Debug\EntityFramework.dll
+C:\Users\galib\Downloads\Online-Learning-Platform-main\OLP\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\galib\Downloads\Online-Learning-Platform-main\OLP\DAL\bin\Debug\EntityFramework.xml
+C:\Users\galib\Downloads\Online-Learning-Platform-main\OLP\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\galib\Downloads\Online-Learning-Platform-main\OLP\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\galib\Downloads\Online-Learning-Platform-main\OLP\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\galib\Downloads\Online-Learning-Platform-main\OLP\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\galib\Downloads\Online-Learning-Platform-main\OLP\DAL\obj\Debug\DAL.dll
+C:\Users\galib\Downloads\Online-Learning-Platform-main\OLP\DAL\obj\Debug\DAL.pdb
+C:\Users\galib\Downloads\Online-Learning-Platform-main\OLP\DAL\obj\Debug\DAL.Migrations.updatestudent.resources
+C:\Users\galib\Downloads\Online-Learning-Platform-main\OLP\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+C:\Users\galib\Downloads\Online-Learning-Platform-main\OLP\DAL\obj\Debug\DAL.Migrations.updatestudent1.resources
+D:\Microsoft Visual Studio\Online-Learning-Platform-main\OLP\DAL\bin\Debug\DAL.dll.config
+D:\Microsoft Visual Studio\Online-Learning-Platform-main\OLP\DAL\bin\Debug\DAL.dll
+D:\Microsoft Visual Studio\Online-Learning-Platform-main\OLP\DAL\bin\Debug\DAL.pdb
+D:\Microsoft Visual Studio\Online-Learning-Platform-main\OLP\DAL\bin\Debug\EntityFramework.dll
+D:\Microsoft Visual Studio\Online-Learning-Platform-main\OLP\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Microsoft Visual Studio\Online-Learning-Platform-main\OLP\DAL\bin\Debug\EntityFramework.xml
+D:\Microsoft Visual Studio\Online-Learning-Platform-main\OLP\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Microsoft Visual Studio\Online-Learning-Platform-main\OLP\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\Microsoft Visual Studio\Online-Learning-Platform-main\OLP\DAL\obj\Debug\DAL.Migrations.updatestudent.resources
+D:\Microsoft Visual Studio\Online-Learning-Platform-main\OLP\DAL\obj\Debug\DAL.Migrations.updatestudent1.resources
+D:\Microsoft Visual Studio\Online-Learning-Platform-main\OLP\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+D:\Microsoft Visual Studio\Online-Learning-Platform-main\OLP\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Microsoft Visual Studio\Online-Learning-Platform-main\OLP\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Microsoft Visual Studio\Online-Learning-Platform-main\OLP\DAL\obj\Debug\DAL.dll
+D:\Microsoft Visual Studio\Online-Learning-Platform-main\OLP\DAL\obj\Debug\DAL.pdb

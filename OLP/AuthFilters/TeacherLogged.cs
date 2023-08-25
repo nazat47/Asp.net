@@ -9,7 +9,7 @@ using System.Web.Http.Filters;
 
 namespace OLP.AuthFilters
 {
-    public class TeacherLogged:AuthorizationFilterAttribute
+    public class TeacherLogged : AuthorizationFilterAttribute
     {
         public override void OnAuthorization(HttpActionContext actionContext)
         {
@@ -21,7 +21,7 @@ namespace OLP.AuthFilters
             else
             {
                 var token = key.ToString();
-                if(token!=null && !TeacherAuth.isTeacherTokenValid(token))
+                if (token != null && !TeacherAuth.isTeacherTokenValid(token))
                 {
                     actionContext.Response = actionContext.Request.CreateResponse(System.Net.HttpStatusCode.Unauthorized, new { msg = "your token is not valid" });
                 }

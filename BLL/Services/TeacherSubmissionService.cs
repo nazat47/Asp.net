@@ -20,9 +20,9 @@ namespace BLL.Services
             var cnvt = mapper.Map<SubmissionDTO>(data);
             return cnvt;
         }
-        public static bool AddSubmissionMark(int id,int mark)
+        public static bool AddSubmissionMark(int id, int mark)
         {
-            var data = DAF.SubmissionMark().AddMarks(id,mark);
+            var data = DAF.SubmissionMark().AddMarks(id, mark);
             return data;
         }
         public static bool DeleteSubmission(int id)
@@ -54,6 +54,27 @@ namespace BLL.Services
             var cnvt = mapper.Map<StudentDTO>(res);
             return cnvt;
         }*/
+        public static string PutStudentGrade(int aid, int sid)
+        {
+            var data = (from i in DAF.AccessSubmissions().viewAll() where i.aid == aid && i.sid == sid select i.marks).SingleOrDefault();
+            if (data >= 90)
+            {
+                return "A";
+            }
+            else if (data >= 80 && data < 90)
+            {
+                return "B";
+            }
+            else if (data >= 70 && data < 80)
+            {
+                return "C";
+            }
+            else if (data >= 60 && data < 70)
+            {
+                return "D";
+            }
+            return "F";
+        }
 
     }
 }
